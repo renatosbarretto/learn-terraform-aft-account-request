@@ -12,7 +12,6 @@ module "sandbox" {
 
   account_tags = {
     "Learn Tutorial" = "AFT"
-    "ManagedBy" = "Terraform"
   }
 
   change_management_parameters = {
