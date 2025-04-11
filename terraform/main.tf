@@ -27,33 +27,4 @@ module "sandbox" {
   account_customizations_name = "sandbox"
 }
 
-module "test" {
-  source = "./modules/aft-account-request"
-
-  control_tower_parameters = {
-    AccountEmail              = "renatosbarretto+aws-test@gmail.com"
-    AccountName               = "test"
-    ManagedOrganizationalUnit = "Sandbox"
-    SSOUserEmail              = "renatosbarretto+aws-test@gmail.com"
-    SSOUserFirstName          = "Test"
-    SSOUserLastName           = "AFT"
-  }
-   
-  account_tags = {
-    "Environment" = "Test"
-    "Purpose"     = "Testing"
-  }
-
-  change_management_parameters = {
-    change_requested_by = "Renato"
-    change_reason       = "Creating test environment"
-  }
-
-  custom_fields = {
-    group = "non-prod"
-  }
-
-  account_customizations_name = "test"
-}
-
 
