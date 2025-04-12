@@ -3,7 +3,7 @@ module "network_hub" {
 
   control_tower_parameters = {
     AccountEmail              = "renatosbarretto+aws-network-hub@gmail.com"
-    AccountName               = "network-hub"
+    AccountName               = "core-network"
     ManagedOrganizationUnit = "Network"  # Nova OU dedicada para Network
     SSOUserEmail             = "renatosbarretto+aws-network-hub@gmail.com"
     SSOUserFirstName         = "Network"
@@ -28,5 +28,5 @@ module "network_hub" {
     network_tier = "core"
   }
 
-  account_customizations_name = "network-hub"
+  account_customizations_name = "core-network"
 } 
