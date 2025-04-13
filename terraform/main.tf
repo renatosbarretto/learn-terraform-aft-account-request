@@ -1,6 +1,7 @@
 module "sandbox" {
-  source = "../../modules/aft-account-request"
-
+  source = "aws-ia/control_tower_account_factory/aws//modules/aft-account-request"
+  version = "1.10.0"  # Mesma versão do módulo principal
+  
   control_tower_parameters = {
     AccountEmail              = "renatosbarretto+aws-sandbox@gmail.com"
     AccountName              = "sandbox"
@@ -28,8 +29,4 @@ module "sandbox" {
   }
 
   account_customizations_name = "sandbox"
-}
-
-module "teste_aft_account" {
-  source = "./teste-aft"
 }
