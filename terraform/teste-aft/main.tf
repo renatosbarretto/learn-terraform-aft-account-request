@@ -1,6 +1,6 @@
 module "teste_aft" {
-  source = "aws-ia/control_tower_account_factory/aws//modules/aft-account-request"
-  version = "1.10.0"  # Mesma versão do módulo principal
+  source = "aws-ia/control_tower_account_factory/aws"
+  version = "1.10.0"
 
   control_tower_parameters = {
     AccountEmail              = "renatosbarretto+aws-teste_aft@gmail.com"
