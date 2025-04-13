@@ -1,5 +1,5 @@
 module "teste_aft" {
-  source = "aws-ia/control_tower_account_factory/aws"
+  source = "aws-ia/control_tower_account_factory/aws//modules/aft-account-request"
   version = "1.10.0"
 
   control_tower_parameters = {
