@@ -20,7 +20,7 @@ module "sandbox" {
   }
 
   custom_fields = {
-    group = "dev"
+    group = "dev-teams"
     no_default_vpc = "true"
   }
 
