@@ -48,7 +48,7 @@ module "hub-network" {
   }
 
   custom_fields = {
-    group = "dev-teams"
+    group = "core-network-team"
     no_default_vpc = "true"
   }
   account_customizations_name = "hub-network01"
