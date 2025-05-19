@@ -26,7 +26,9 @@ module "sandbox" {
 
   account_customizations_name = "sandbox"
 }
-module "hub-network" {
+
+
+module "hub-network01" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
