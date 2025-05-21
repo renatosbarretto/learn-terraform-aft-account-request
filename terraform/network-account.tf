@@ -2,10 +2,10 @@ module "hub-network" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
-    AccountEmail              = "renatosbarretto+aws-network01@gmail.com"
-    AccountName               = "hub-network-01"
+    AccountEmail              = "renatosbarretto+aws-network02@gmail.com"
+    AccountName               = "hub-network-02"
     ManagedOrganizationalUnit = "Sandbox"
-    SSOUserEmail              = "renatosbarretto+aws-network01@gmail.com"
+    SSOUserEmail              = "renatosbarretto+aws-network02@gmail.com"
     SSOUserFirstName          = "Network"
     SSOUserLastName           = "Team"
   }
@@ -22,5 +22,5 @@ module "hub-network" {
     group = "core-network-team"
     no_default_vpc = "true"
   }
-  account_customizations_name = "hub-network01"
+  account_customizations_name = "hub-network02"
 }
