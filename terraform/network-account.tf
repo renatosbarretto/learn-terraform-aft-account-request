@@ -4,7 +4,7 @@ module "hub-network01" {
   control_tower_parameters = {
     AccountEmail              = "renatosbarretto+aws-network01@gmail.com"
     AccountName               = "hub-network-01"
-    ManagedOrganizationalUnit = "Security"
+    ManagedOrganizationalUnit = "Sandbox"
     SSOUserEmail              = "renatosbarretto+aws-network01@gmail.com"
     SSOUserFirstName          = "Network"
     SSOUserLastName           = "Team"
