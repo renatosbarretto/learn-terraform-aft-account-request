@@ -1,4 +1,4 @@
-module "hub-network01" {
+module "hub-network" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
